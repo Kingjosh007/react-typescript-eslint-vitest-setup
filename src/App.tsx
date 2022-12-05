@@ -1,7 +1,12 @@
-import { HashRouter } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
 
 function App() {
-  return <h1>Hello World!</h1>;
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+    </Routes>
+  );
 }
 
 function WrappedApp() {
