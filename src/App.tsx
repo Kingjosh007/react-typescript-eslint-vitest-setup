@@ -1,5 +1,15 @@
+import { HashRouter } from 'react-router-dom';
+
 function App() {
   return <h1>Hello World!</h1>;
 }
 
-export default App;
+function WrappedApp() {
+  return (
+    <HashRouter>
+      <App />
+    </HashRouter>
+  );
+}
+
+export default WrappedApp;
